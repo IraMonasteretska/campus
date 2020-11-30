@@ -1,0 +1,190 @@
+.program {
+    padding-top: 70px;
+    padding-bottom: 200px;
+
+    &__title {
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: 500;
+        margin-bottom: 53px;
+    }
+
+    &-block {
+        margin-bottom: 25px;
+    
+        &__month {
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            position: relative;
+            
+            &--small {
+                margin-bottom: 40px;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 696px;
+                height: 1px;
+                background: #000;
+            }
+
+            &--title {
+                font-weight: 500; 
+                font-size: 26px;
+                line-height: 36px;
+                text-transform: uppercase;
+                width: 250px;
+                padding-right: 50px;
+            }
+
+            &--text {
+                font-family: "Nunito", sans-serif;
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 24px;
+                text-transform: lowercase;
+            }
+        }
+
+        &__year {
+            font-size: 26px;
+            line-height: 36px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.red {
+    background: #f14942;
+}
+
+.yellow {
+    background: #f6b839;
+}
+
+.blue {
+    background:#444d73;
+}
+
+.submarine {
+    background:#b9c7ca;
+}
+
+.calendar {
+    &-block {
+        display: flex;
+        position: relative;
+        margin-bottom: 14px;
+
+        &__color {
+            display: block;
+            position: absolute;
+            width: 6px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            
+        }
+
+        &__link {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 5px;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__title {
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 33px;
+            width: 232px;
+            padding-right: 30px;
+            display: flex;
+            flex-shrink: 0;
+            position: relative;
+            text-transform: uppercase;
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 30px;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: #000;
+                z-index: 0;
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -32px;
+            margin-bottom: -9px;
+        }
+
+        &__item {
+            position: relative;
+            padding-left: 13px;
+            padding-top: 9px;
+            padding-bottom: 3px;
+            width: 200px;
+            margin-right: 32px;
+            margin-bottom: 27px;
+            margin-top: -9px;
+            z-index: 3;
+        }
+
+        &__date {
+            position: relative;
+            font-size: 28px;
+            line-height: 30px;
+            margin-bottom: 15px;
+            z-index: 3;
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 30px;
+                left: -7px;
+                right: -32px;
+                height: 1px;
+                background: #000;
+            }
+
+            &--img {
+                color: #fff;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        &__text {
+            font-family: "Poppins", sans-serif;
+            max-width: 180px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}

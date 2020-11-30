@@ -1,0 +1,14 @@
+@import "normalize";
+@import "overall";
+@import "vars";
+@import "fonts";
+
+/* Components  */
+
+@import "components/header.scss";
+@import "components/about.scss";
+@import "components/program.scss";
+
+
+/* Media queries */
+@import "media";
