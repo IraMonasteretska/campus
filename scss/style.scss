@@ -1,14 +1,16 @@
 @import "normalize";
 @import "overall";
-@import "vars";
 @import "fonts";
+@import "swiper.min";
 
 /* Components  */
 
 @import "components/header.scss";
 @import "components/about.scss";
 @import "components/program.scss";
-
+@import "components/slider.scss";
+@import "components/trainers.scss";
+@import "components/documents.scss";
 
 /* Media queries */
 @import "media";
