@@ -1,0 +1,98 @@
+.reviews-block {
+    display: flex;
+    justify-content: space-between;
+    &__left {
+        width: 28%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__body {
+        width: 68%;
+    }
+}
+
+.reviews {
+    padding-bottom: 100px;
+    h2 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+    }
+}
+
+.reviews-slider {
+    margin-bottom: 75px;
+    &__top {
+        margin-bottom: 80px;
+    }
+    &__buttons {
+        display: flex;
+        margin-top: auto;
+        margin-bottom: 85px;
+    }
+    &__bullets {
+        display: flex;
+        margin-top: auto;
+        margin-bottom: 85px;
+        .swiper-pagination-bullet {
+            margin-left: 10px;
+            margin-right: 10px;
+            background: #fff;
+            border: 1px solid #000;
+        }
+        .swiper-pagination-bullet-active {
+            background: #000;
+        }
+    }
+
+    &__person {
+        display: flex;
+    }
+    &__content {
+        padding-left: 30px;
+        padding-top: 10px;
+        h3 {
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 31px;
+            display: flex;
+            align-items: center;
+        }
+        p {
+            font-size: 17px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            
+        }
+       
+    }
+    &__quote {
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -30px;
+            left: -15px;
+            width: 55px;
+            height: 66px;
+            background: url('../img/svg/reviews.svg') no-repeat center center / contain;
+            z-index: -1;
+        }
+    }
+
+    &__slide {
+        padding-top: 30px;
+        padding-left: 15px;
+        position: relative;
+        
+        p {
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+    }
+    
+}

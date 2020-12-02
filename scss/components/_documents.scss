@@ -1,0 +1,120 @@
+.documents {
+    padding-bottom: 190px;
+
+    &-container {
+        max-width: 1455px;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    padding-top: 50px;
+
+    &__title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 53px;
+    }
+
+    &-slider {
+        display: flex;
+
+        &__slide {
+            display: flex;
+            background-color: #fff;
+            color: #000;
+            flex-direction: column;
+            border: 1px solid #000;
+            width: 232px;
+            padding-bottom: 44px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &:hover {
+                background-color: #000;
+                color: #fff;
+                cursor: pointer;
+                transition: background-color 0.3s ease, color 0.3s ease;
+                .documents-slider__img {
+                    background: url('../img/document-hover.jpg') no-repeat center center;
+                    background-size: auto;
+                    img {
+                        opacity: 0;
+                        transition: opacity 0.3s ease;
+                    }  
+                }
+            }
+        }
+
+        &__img {
+            padding: 37px 51px 20px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        &__title {
+            font-size: 21px;
+            line-height: 31px;
+            text-align: center;
+            padding: 0 20px;
+            margin-bottom: 70px;
+        }
+
+        &__btn {
+            font-family: 'Ilisarniq', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+
+        }
+
+        &__wrapper {
+            padding-bottom: 36px;
+        }
+
+        &__buttons {
+            position: relative;
+            bottom: 0;
+            width: 144px;
+
+            .swiper-button-prev {
+                position: absolute;
+                left: 10px;
+            }
+
+            .swiper-button-next {
+                position: absolute;
+                left: 88px;
+            }
+        }
+
+        &__bullets {
+            position: relative;
+            text-align: right;
+            margin-left: auto;
+            height: 30px;
+            margin-top: 27px;
+            z-index: 1;
+
+            .swiper-pagination-bullet {
+                background: #fff;
+                border: 1px solid #000;
+            }
+
+            .swiper-pagination-bullet-active {
+                background: #000;
+                border: 1px solid #fff;
+            }
+        }
+
+    }
+}

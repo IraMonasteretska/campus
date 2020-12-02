@@ -53,4 +53,64 @@ let mySwiper = new Swiper('.first-slider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    
+});
+
+/****  Documents Slider  *****/
+
+let docSwiper = new Swiper('.documents-slider', {
+    slidesPerView: 2,
+    spaceBetween: 0,
+    loop: true,
+    pagination: {
+        el: '.documents-slider__bullets',
+        type: 'bullets',
+        clickable: true,    
+    },
+    
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        575: {
+          slidesPerView: 3,  
+            pagination: {
+            el: '.documents-slider__bullets',
+            type: 'bullets',
+            clickable: true,    
+            }
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        992: {
+            slidesPerView: 5,
+        },
+        1200: {
+            slidesPerView: 6,
+        },
+    }
+});
+
+/****  Reviews Slider  *****/
+
+let revSwiper = new Swiper('.reviews-slider', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+        el: '.reviews-slider__bullets',
+        type: 'bullets',
+        clickable: true,    
+    },   
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        575: {
+            slidesPerView: 2
+          },
+    }
 });

@@ -1,6 +1,25 @@
-@media screen and (max-width: 1440px) {}
+@media screen and (max-width: 1440px) {
+	.card__img {
+		left: -106%;
+		height: 480px;
+		width: auto;
+	}
+	.partners__block ul {
+		width: 87%;
+	}
+	.partners {
+		h2 {
+			width: 13%;
+		}
+	}
+}
 
 @media screen and (max-width: 1200px) {
+	.header {
+		&__btn {
+			margin-left: auto;
+		}
+	}
 	.menu {
 		position: fixed;
 		display: block;
@@ -32,6 +51,7 @@
 
 		&-item {
 			margin-bottom: 60px;
+
 			&:before {
 				display: none;
 			}
@@ -58,23 +78,53 @@
 		transform: translateX(0);
 		transition: transform 0.3s ease, opacity 0.3s ease;
 	}
+
 	.first-slider__bullets {
 		width: 130px;
 	}
+
 	.slider {
 		.swiper-pagination-bullet {
 			margin-right: 15px;
 		}
 	}
+
 	.first-slider__buttons {
 		left: 3%;
 	}
+	.contact {
+		padding-bottom: 150px;
+		&-block {
+			display: block;
+		}
+		&-bg {
+			height: 526px;
+		}
+		h2 {
+			font-size: 22px;
+			line-height: 33px;
+		}
+		p {
+			font-size: 14px;
+			line-height: 20px;
+			width: 320px;
+		}
+	}
+	
+	.form {
+		margin-left: 85px;
+		margin-right: 30px;
+		width: 85%;
+		padding: 48px 50px 48px 30px;
+	}
+	
 }
 
 @media screen and (max-width: 992px) {
 	.container {
 		padding-left: 53px;
 	}
+
 	.about {
 		background: #fff;
 
@@ -82,13 +132,16 @@
 			display: block;
 			padding-right: 0;
 		}
-		&__title {
-			max-width: 700px;
+
+		h1 {
+			max-width: 100%;
 		}
-		&__text {
+
+		p {
 			text-align: justify;
 			padding-right: 0;
-			max-width: 700px;
+			max-width: 85%;
+			padding-right: 20px;
 		}
 
 		&-left {
@@ -98,65 +151,82 @@
 		&-right {
 			background: #000;
 			padding-top: 24px;
+
 			&__descr {
 				padding-left: 116px;
 				margin-bottom: 73px;
 				padding-right: 20px;
-			}
-			&__text {
-				font-size: 14px;
-				line-height: 20px;
-				max-width: 550px;
-				margin-bottom: 22px;
-				text-align: justify;
-			}
-			&__item {
-				
-				font-size: 14px;
-				line-height: 20px;
-				max-width: 550px;
-				&::before {
-					width: 5px;
-					height: 5px;
+
+				p {
+					font-size: 14px;
+					line-height: 20px;
+					max-width: 560px;
+					margin-bottom: 22px;
+					text-align: justify;
+				}
+
+				ul {
+					margin-bottom: 25px;
+
+					li {
+						font-size: 14px;
+						line-height: 20px;
+						max-width: 550px;
+
+						&::before {
+							width: 5px;
+							height: 5px;
+						}
+					}
 				}
 			}
-			&__list {
-				margin-bottom: 25px;
-			}
+
 			&__cards {
 				padding-right: 50px;
 			}
 		}
 	}
+
 	.card {
 		margin-bottom: 81px;
-		&__title {
-			font-size: 22px;
-			line-height: 33px;
-			margin-bottom: 11px;
-		}
-		&__text {
-			font-size: 12px;
-			line-height: 16px;
-			max-width: 270px;
-			margin-bottom: 16px;
-		}
+
 		&__content {
 			margin-left: auto;
 			max-width: 350px;
 			padding-top: 24px;
 			padding-left: 31px;
 			padding-bottom: 36px;
+
 			&:before {
 				height: 8px;
 			}
+
 			&:after {
 				width: 39px;
 				height: 39px;
 				bottom: 23px;
-    			right: 7px;
+				right: 7px;
+			}
+
+			h3 {
+				font-size: 22px;
+				line-height: 33px;
+				margin-bottom: 11px;
+			}
+
+			p {
+				font-size: 12px;
+				line-height: 16px;
+				max-width: 270px;
+				margin-bottom: 16px;
+			}
+
+			ul li {
+				font-size: 12px;
+				line-height: 16px;
 			}
 		}
+
 		&__img {
 			height: 248px;
 			max-width: 444px;
@@ -164,36 +234,40 @@
 			margin-bottom: -5px;
 			object-fit: cover;
 		}
-		&__item {
-			font-size: 12px;
-			line-height: 16px;
-		}
+
 	}
+
 	.program {
 		padding-top: 49px;
+
 		&__title {
 			font-size: 22px;
 			line-height: 33px;
 			margin-bottom: 33px;
 		}
+
 		&-block {
 			margin-bottom: 42px;
+
 			&__month {
 				&--title {
 					font-size: 14px;
 					line-height: 36px;
 				}
+
 				&--text {
 					font-size: 14px;
 					line-height: 18px;
 				}
 			}
+
 			&__year {
 				font-size: 14px;
 				line-height: 36px;
 			}
 		}
 	}
+
 	.calendar {
 		&-block {
 			&__title {
@@ -202,68 +276,164 @@
 				width: 114px;
 				padding-right: 15px;
 			}
+
 			&__color {
 				width: 3px;
 			}
+
 			&__date {
 				font-size: 18px;
 				line-height: 30px;
 				margin-bottom: 8px;
+
 				&:after {
 					right: -12px;
 				}
 			}
+
 			&__text {
 				font-size: 14px;
 				line-height: 21px;
 			}
+
 			&__item {
 				padding-left: 10px;
 				width: 180px;
 				margin-right: 12px;
 			}
+
 			&__link img {
 				left: 3px;
 			}
+
 			&__list {
 				margin-right: 0;
 			}
 		}
 	}
+
 	.block__side {
 		display: none;
 	}
+
 	.slider {
 		.first-slider__buttons {
 			top: 70px;
 			left: 30px;
 		}
-		.swiper-button-prev, .swiper-button-next {
+
+		.swiper-button-prev,
+		.swiper-button-next {
 			width: 51px;
 			height: 51px;
 		}
 	}
+
 	.trainers {
-		&__title {
+		h2 {
 			font-size: 22px;
 			line-height: 33px;
 		}
 	}
+
 	.trainer {
-		&__title {
+		h3 {
 			font-size: 20px;
 			line-height: 26px;
 		}
-		&__specialization {
+
+		div {
 			font-size: 14px;
 			line-height: 20px;
 		}
-		&__text {
+
+		p {
 			font-size: 14px;
 			line-height: 20px;
 		}
 	}
+	.documents {
+		padding-bottom: 115px;
+	}
+	.reviews {
+		padding-bottom: 30px;
+		h2 {
+			font-size: 22px;
+			line-height: 33px;
+			margin-bottom: 20px;	
+		}
+		&-block {
+			&__left {
+				display: none;
+			}
+			&__body {
+				width: 100%;
+			}
+		}
+	}
+	.reviews-slider {
+		p {
+			font-size: 14px;
+			line-height: 20px;
+			text-align: justify;
+		}
+		&__content {
+			h3 {
+				font-size: 16px;
+				line-height: 24px;
+			}
+			p {
+				font-size: 15px;
+				line-height: 24px;
+			}
+		}
+	}
+	.partners {
+		&__block {
+			display: block;
+			ul {
+				margin: 0;
+				width: 100%;
+				justify-content: space-between;
 
+				li {
+					margin-left: 0;
+					margin-right: 0;
+					width: 25%;
+					height: 55px;
+					padding: 0 10px;
+				}
+			}
+		}
+		h2 {
+			width: 100%;
+			margin-bottom: 37px;
+			font-size: 22px;
+			line-height: 33px;
+		}
+	}
+	.footer {
+		padding: 27px 0 36px;
+		&-container {
+			padding-left: 50px;
+			padding-right: 54px;
+		}
+		&__logo {
+			width: 135px;
+		}
+		&__text {
+			font-size: 12px;
+			line-height: 12px;
+		}
+		&__product {
+			font-size: 12px;
+			line-height: 12px;
+		}
+		&__link {
+			font-size: 12px;
+			line-height: 12px;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -279,61 +449,74 @@
 			padding: 0 34px;
 		}
 	}
+
 	.nav {
 		height: 86px;
 	}
+
 	.first {
 		background-position-y: 82px;
-		background-size: cover;	
+		background-size: cover;
 	}
+
 	.about {
 		padding-top: 26px;
+
 		&-container {
 			padding-left: 51px;
 		}
-		&__title {
+
+		h1 {
 			font-size: 28px;
 			line-height: 34px;
 			margin-bottom: 19px;
 		}
-		&__subtitle {
+
+		h2 {
 			font-size: 22px;
 			line-height: 33px;
 			margin-bottom: 17px;
 		}
-		&__text {
+
+		p {
 			max-width: 550px;
-			
+
 			font-size: 14px;
 			line-height: 20px;
-			
+
 		}
 	}
+
 	.program {
 		&-block {
 			margin-bottom: 37px;
+
 			&__month {
 				&--title {
 					width: 110px;
 					padding-right: 0;
 				}
+
 				&--text {
 					font-size: 12px;
 					line-height: 18px;
 					margin-left: auto;
 				}
+
 				&:after {
 					width: 100%;
 				}
 			}
-			
+
 		}
+
 		&__title {
 			font-size: 20px;
 			line-height: 30px;
 			margin-bottom: 49px;
 		}
 	}
+
 	.calendar {
 		&-block {
 			&__title {
@@ -342,22 +525,63 @@
 				line-height: 36px;
 				margin-bottom: 25px;
 			}
+
 			&__text {
 				font-size: 12px;
 				line-height: 18px;
 			}
+
 			&__item {
 				width: 145px;
 			}
 		}
 	}
-}
+
+	.slider {
+		.swiper-slide img {
+			height: 450px;
+		}
+	}
+	.documents-slider__bullets {
+		.swiper-pagination-bullet {
+			width: 13px;
+			height: 13px;
+			margin-right: 18px;
+		}
+	}
+	.partners {
+		&__block {
+			ul {
+				li {
+					width: 30%;
+					padding: 0 10px;
+				}
+			}
+		}
+	}
+	.contact-form {
+		margin-left: 0;
+		width: 100%;
+	}
+	.footer {
+		padding: 17px 0;
+		&__mobile {
+			display: block;
+		}
+		&__text {
+			margin-bottom: 5px;
+		}
+	}
+	
+
+} 
 
 @media screen and (max-width: 576px) {
 	.container {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
+
 	.nav {
 		height: 70px;
 	}
@@ -379,7 +603,7 @@
 	}
 
 	.first {
-		background-position-y: 0;
+		background-position-y: 70px;
 		background-position-x: -400px;
 		max-width: 100%;
 		height: 385px;
@@ -390,73 +614,100 @@
 		&-container {
 			padding-left: 30px;
 		}
+
 		&-left {
 			max-width: 90%;
 			margin-bottom: 42px;
 		}
+
 		&-right {
 			padding-top: 34px;
 			padding-bottom: 0;
 			margin-left: -30px;
-		
+
 			&__descr {
 				padding-left: 30px;
 				margin-bottom: 139px;
-			}
-			&__text {
-				max-width: 97%;
-			}
-			&__item {
-				max-width: 100%;
-				padding-left: 13px;
-				&:before {
-					left: 1px;
-					top: 4px;
+
+				p {
+					max-width: 97%;
+				}
+
+				ul {
+					margin-bottom: 26px;
+
+					li {
+						max-width: 100%;
+						padding-left: 13px;
+
+						&:before {
+							left: 1px;
+							top: 4px;
+						}
+					}
 				}
 			}
+
+
 			&__cards {
 				padding-right: 0;
 			}
-			&__list {
-				margin-bottom: 26px;
-			}
-			
+
 		}
-		&__title {
+
+		h1 {
 			font-size: 22px;
 			line-height: 30px;
 			margin-bottom: 21px;
 		}
-		&__subtitle {
+
+		h2 {
 			font-size: 20px;
 			line-height: 30px;
 			margin-bottom: 5px;
 		}
 	}
+
 	.card {
 		margin-bottom: 121px;
+
 		&__img {
 			top: -100px;
 			right: 0;
 			left: auto;
 			bottom: auto;
 		}
+
 		&__content {
 			max-width: 92%;
+
 			&:after {
 				right: 11px;
 				bottom: 29px;
 			}
+
+			h3 {
+				font-size: 18px;
+				line-height: 27px;
+				margin-bottom: 18px;
+			}
 		}
-		&__title {
-			font-size: 18px;
-			line-height: 27px;
-			margin-bottom: 18px;
-		}
+
 	}
+
 	.calendar-block {
 		display: block;
+		ul li {
+			margin-right: 0;
+			width: 45%;
+		}
+		h3 {
+			font-size: 15px;
+			line-height: 36px;
+		}
+
 	}
+
 	.slider .first-slider__buttons {
 		justify-content: space-between;
 		top: auto;
@@ -467,85 +718,176 @@
 		padding-right: 30px;
 		height: auto;
 	}
+
 	.slider .swiper-button-prev {
 		left: 0;
 	}
+
 	.slider .swiper-button-next {
 		right: 0;
 	}
+
 	.swiper-button-prev,
 	.swiper-button-next {
 		width: 31px;
 		height: 31px;
 		background-size: 50%;
 	}
+
 	.trainers {
 		&-container {
 			padding-left: 31px;
 			padding-right: 31px;
 		}
-		&__title {
+
+		h3 {
 			font-size: 20px;
 			line-height: 30px;
 		}
-		&__list {
+
+		ul {
 			margin-right: 0;
 			justify-content: space-between;
 		}
 
-	}	
+	}
+
 	.trainer {
 		width: 45%;
 		margin-right: 0;
+		margin-left: 10px;
 
 		&::before {
 			width: 70px;
 			height: 70px;
 			left: -26px !important;
-    		top: 90px !important;
+			top: 90px !important;
 		}
+
 		&__img {
 			margin-bottom: 18px;
 		}
-		&__title {
+
+		h3 {
 			font-size: 16px;
 			line-height: 20px;
 		}
-		&__specialization {
+
+		div {
 			font-size: 14px;
 			line-height: 20px;
 		}
-		&__text {
+
+		p {
 			padding-right: 0;
 			font-size: 14px;
 			line-height: 20px;
 		}
 	}
+	.documents-slider__bullets {
+		display: none;	
+	}
+	.documents-slider__buttons {
+		width: 100%;
+		.swiper-button-next {
+			left: auto;
+			right: 10px;
+		}
+	}
+	.reviews-container {
+		padding-left: 15px;
+		padding-right: 15px;	
+	}
+	.program-block__month {
+		h4 {
+			font-size: 14px;
+			line-height: 36px;
+			width: 130px;
+		}
+		span {
+			font-size: 12px;
+			line-height: 18px;
+		}
+	}
+	.partners {
+		&-container {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__block {
+			ul {
+				li {
+					padding: 0;
+					width: 50%;
+					height: 50px;
+				}
+			}
+		}
+		h2 {
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+	.contact {
+		padding-bottom: 60px;
+		&-container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		&-block {
+			display: block;
+		}
+		h2 {
+			font-size: 20px;
+			line-height: 30px;
+			margin-bottom: 11px;
+			margin-left: 30px;		
+		}
+		p {
+			margin-left: 30px;
+			width: 100%;
+			margin-bottom: 77px;
+			width: 80%;	
+		}
+	}
+	
+	.form {
+		margin-left: 0;
+		padding: 36px 30px 65px;
+		input {
+			margin-left: 0;
+		}
+
+		textarea {
+			margin-left: 0;
+		}
+
+		button {
+			margin-left: 0;
+		}
+
+		label {
+			display: none;
+		}
+	}
+	
 }
 
 @media screen and (max-width: 375px) {
 	.header {
 		padding-left: 20px;
 	}
-	.calendar {
-		&-block {
-			&__title {
-				min-width: 45%;
-			}
-			&__item {
-				width: 45%;
-			}
-		}
-	}
+
 	.program {
 		&-block {
 			&__month {
-				&--title {
+				h4 {
 					width: 95px;
 				}
 			}
 		}
 	}
+
 	.trainers-container {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -553,5 +895,17 @@
 
 	.trainer::before {
 		left: -14px !important;
+	}
+
+	.slider {
+		.swiper-slide img {
+			height: 280px;
+		}
+	}
+	.reviews-container {
+		padding-left: 10px;
+	}
+	.reviews-slider__content {
+		padding-left: 10px;
 	}
 }

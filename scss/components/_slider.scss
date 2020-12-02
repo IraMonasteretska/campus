@@ -11,9 +11,13 @@
 	margin-right: 0;
 }
 
+.slider .swiper-slide img {
+	height: 700px;
+}
+
 .block {
-    display: flex;
-    position: relative;
+	display: flex;
+	position: relative;
 }
 
 .block__side {
@@ -30,9 +34,9 @@
 	text-align: center;
 }
 
-.first-slider img {
-	display: block;
-	max-width: 100%;
+.swiper-slide img {
+	object-fit: cover;
+
 }
 
 .slider-container {
@@ -50,11 +54,18 @@
 	position: absolute;
 	display: flex;
 	top: 70px;
-    left: 5%;
+	left: 5%;
 	z-index: 10;
+
 	button:focus {
 		outline: none;
 	}
+}
+
+.swiper-button-prev svg path,
+.swiper-button-next svg path {
+	fill: #000;
+	transition: fill 0.3s ease;
 }
 
 .swiper-button-prev,
@@ -63,15 +74,25 @@
 	width: 72px;
 	height: 72px;
 	background-position: center;
+	background-color: #fff;
+	transition: background-color 0.3s ease;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		background-color: #000;
+		transition: background-color 0.3s ease;
+
+		&.swiper-button-prev svg path,
+		&.swiper-button-next svg path {
+			fill: #fff;
+			transition: fill 0.3s ease;
+		}
+	}
 }
 
-.swiper-button-prev {
-	background: #fff url('../img/svg/arrow-prew.svg') no-repeat center center;
-}
-
-.swiper-button-next {
-	background: #fff url('../img/svg/arrow-next.svg') no-repeat center center;
-}
 
 .first-slider__bullets {
 	position: absolute;

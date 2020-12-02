@@ -1,0 +1,31 @@
+.partners {
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        ul {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+    
+            li {
+                width: 21%;
+                height: 72px;
+                margin: 0 15px 42px;
+                
+                img {
+                    height: 100%;
+                    width: auto;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    h2 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+        width: 30%;
+    }
+    
+}

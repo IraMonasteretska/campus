@@ -2,7 +2,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
 
-    &__title {
+    h2 {
         font-size: 30px;
         line-height: 45px;
         font-weight: 500;
@@ -33,7 +33,7 @@
                 background: #000;
             }
 
-            &--title {
+            h4 {
                 font-weight: 500; 
                 font-size: 26px;
                 line-height: 36px;
@@ -42,7 +42,7 @@
                 padding-right: 50px;
             }
 
-            &--text {
+            span {
                 font-family: "Nunito", sans-serif;
                 font-weight: 300;
                 font-size: 17px;
@@ -57,22 +57,6 @@
             text-transform: uppercase;
         }
     }
-}
-
-.red {
-    background: #f14942;
-}
-
-.yellow {
-    background: #f6b839;
-}
-
-.blue {
-    background:#444d73;
-}
-
-.submarine {
-    background:#b9c7ca;
 }
 
 .calendar {
@@ -98,6 +82,7 @@
             left: 0;
             right: 0;
             bottom: 0;
+            cursor: pointer;
 
             img {
                 position: absolute;
@@ -111,7 +96,7 @@
             }
         }
 
-        &__title {
+        h3 {
             font-weight: 500;
             font-size: 28px;
             line-height: 33px;
@@ -135,31 +120,56 @@
             }
         }
 
-        &__list {
+        ul {
             display: flex;
             flex-wrap: wrap;
             margin-right: -32px;
             margin-bottom: -9px;
-        }
 
-        &__item {
-            position: relative;
-            padding-left: 13px;
-            padding-top: 9px;
-            padding-bottom: 3px;
-            width: 200px;
-            margin-right: 32px;
-            margin-bottom: 27px;
-            margin-top: -9px;
-            z-index: 3;
-        }
+            li {
+                position: relative;
+                padding-left: 13px;
+                padding-top: 9px;
+                padding-bottom: 3px;
+                width: 200px;
+                margin-right: 32px;
+                margin-bottom: 27px;
+                margin-top: -9px;
+                z-index: 3;
+                img {
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+                &:hover {
+                    z-index: 2;
+                    .calendar-block__date {
+                        color: #fff;
+                        transition: color 0.3s ease;
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    .calendar-block__text {
+                        color: #fff;
+                        transition: color 0.3s ease;
+                    }
 
+                    img {
+                        opacity: 1;
+                        transition: opacity 0.3s ease;
+                    }
+                }
+            }
+        }
+        
         &__date {
             position: relative;
             font-size: 28px;
             line-height: 30px;
             margin-bottom: 15px;
-            z-index: 3;
+            z-index: 5;
+            transition: color 0.3s ease;
+            pointer-events: none;
             &::after {
                 content: '';
                 display: block;
@@ -180,11 +190,15 @@
         }
 
         &__text {
+            position: relative;
             font-family: "Poppins", sans-serif;
             max-width: 180px;
             font-weight: 500;
             font-size: 16px;
             line-height: 24px;
+            z-index: 2;
+            transition: color 0.3s ease;
+            pointer-events: none;
         }
     }
 }
