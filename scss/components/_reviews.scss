@@ -7,7 +7,7 @@
         justify-content: space-between;
     }
     &__body {
-        width: 68%;
+        width: 70%;
     }
 }
 
@@ -17,6 +17,9 @@
         font-weight: 500;
         font-size: 30px;
         line-height: 45px;
+    }
+    &-container {
+        padding-right: 85px;
     }
 }
 

@@ -64,6 +64,7 @@
             text-align: center;
             padding: 0 20px;
             margin-bottom: 70px;
+            font-weight: 500;
         }
 
         &__btn {
@@ -90,14 +91,24 @@
             width: 144px;
 
             .swiper-button-prev {
-                position: absolute;
                 left: 10px;
             }
-
-            .swiper-button-next {
-                position: absolute;
+            .swiper-button-next {   
                 left: 88px;
             }
+
+            .swiper-button-prev,
+		    .swiper-button-next {
+                position: absolute;
+                width: 51px;
+                height: 51px;
+                background-size: 50%;
+                svg {
+                    transform: scale(0.7);
+                }
+            }
+
+            
         }
 
         &__bullets {
@@ -105,7 +116,7 @@
             text-align: right;
             margin-left: auto;
             height: 30px;
-            margin-top: 27px;
+            margin-top: 20px;
             z-index: 1;
 
             .swiper-pagination-bullet {

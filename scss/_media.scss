@@ -14,6 +14,10 @@
 			width: 13%;
 		}
 	}
+	.first-slider__buttons,
+	.first-slider__bullets {
+		left: 40px;
+	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -33,10 +37,9 @@
 		width: 290px;
 		background: #000;
 		color: #fff;
-		height: auto;
 		z-index: 10;
 		padding-top: 148px;
-		padding-right: 30px;
+		padding-right: 50px;
 		padding-bottom: 20px;
 		margin-right: 0;
 		transition: transform 0.3s ease, opacity 0.3s ease;
@@ -125,6 +128,13 @@
 		width: 85%;
 		padding: 48px 50px 48px 30px;
 	}
+	.first-slider__buttons,
+	.first-slider__bullets {
+		left: 30px;
+	}
+	.reviews-container {
+		padding-right: 40px;
+	}
 
 }
 
@@ -143,6 +153,7 @@
 
 		h1 {
 			max-width: 100%;
+			padding-right: 30px;
 		}
 
 		p {
@@ -239,7 +250,7 @@
 			height: 248px;
 			max-width: 444px;
 			left: -50px;
-			margin-bottom: -5px;
+			margin-bottom: -8px;
 			object-fit: cover;
 		}
 
@@ -248,7 +259,7 @@
 	.program {
 		padding-top: 49px;
 
-		&__title {
+		h2 {
 			font-size: 22px;
 			line-height: 33px;
 			margin-bottom: 33px;
@@ -258,12 +269,12 @@
 			margin-bottom: 42px;
 
 			&__month {
-				&--title {
+				h4 {
 					font-size: 14px;
 					line-height: 36px;
 				}
 
-				&--text {
+				span {
 					font-size: 14px;
 					line-height: 18px;
 				}
@@ -278,7 +289,7 @@
 
 	.calendar {
 		&-block {
-			&__title {
+			h3 {
 				font-size: 16px;
 				line-height: 36px;
 				width: 114px;
@@ -334,7 +345,13 @@
 		.swiper-button-next {
 			width: 51px;
 			height: 51px;
+			background-size: 50%;
+			svg {
+				transform: scale(0.7);
+			}
 		}
+		
+
 	}
 	.swiper-button-prev,
 	.swiper-button-next {
@@ -480,7 +497,14 @@
 			line-height: 12px;
 		}
 	}
-
+	.contact-container {
+		padding-right: 0;
+	}
+	.form {
+		width: 630px;
+		margin-right: 0;
+		margin-left: auto;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -609,9 +633,8 @@
 		}
 	}
 
-	.contact-form {
-		margin-left: 0;
-		width: 100%;
+	.form {
+		width: 88%;
 	}
 
 	.footer {
@@ -651,12 +674,13 @@
 		}
 
 		&__menu {
+			padding-right: 30px;
 			padding-top: 100px;
 		}
 	}
 
 	.burger {
-		width: 25%;
+		width: 85px;
 	}
 
 	.first {
@@ -716,6 +740,7 @@
 			font-size: 22px;
 			line-height: 30px;
 			margin-bottom: 21px;
+			padding-right: 0;
 		}
 
 		h2 {
@@ -784,7 +809,6 @@
 
 	.slider .swiper-button-next {
 		right: 0;
-		
 	}
 
 	.slider .swiper-button-prev,
@@ -905,6 +929,17 @@
 		padding-right: 15px;
 	}
 
+	.program {
+		padding-top: 49px;
+
+		h2 {
+			font-size: 20px;
+			line-height: 30px;
+			margin-bottom: 48px;
+		}
+	}
+
+
 	.program-block__month {
 		h4 {
 			font-size: 14px;
@@ -968,6 +1003,7 @@
 	}
 
 	.form {
+		width: 100%;
 		margin-left: 0;
 		padding: 36px 30px 65px;
 

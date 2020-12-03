@@ -54,7 +54,8 @@
 	position: absolute;
 	display: flex;
 	top: 70px;
-	left: 5%;
+	left: 60px;
+
 	z-index: 10;
 
 	button:focus {
@@ -102,8 +103,7 @@
 .first-slider__bullets {
 	position: absolute;
 	bottom: 22px;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 60px;
 	width: 175px;
 	text-align: left;
 }
