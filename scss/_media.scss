@@ -4,9 +4,11 @@
 		height: 480px;
 		width: auto;
 	}
+
 	.partners__block ul {
 		width: 87%;
 	}
+
 	.partners {
 		h2 {
 			width: 13%;
@@ -20,6 +22,7 @@
 			margin-left: auto;
 		}
 	}
+
 	.menu {
 		position: fixed;
 		display: block;
@@ -92,32 +95,37 @@
 	.first-slider__buttons {
 		left: 3%;
 	}
+
 	.contact {
 		padding-bottom: 150px;
+
 		&-block {
 			display: block;
 		}
+
 		&-bg {
 			height: 526px;
 		}
+
 		h2 {
 			font-size: 22px;
 			line-height: 33px;
 		}
+
 		p {
 			font-size: 14px;
 			line-height: 20px;
 			width: 320px;
 		}
 	}
-	
+
 	.form {
 		margin-left: 85px;
 		margin-right: 30px;
 		width: 85%;
 		padding: 48px 50px 48px 30px;
 	}
-	
+
 }
 
 @media screen and (max-width: 992px) {
@@ -328,6 +336,17 @@
 			height: 51px;
 		}
 	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		&:hover {
+			background-color: #fff;
+
+			&.swiper-button-prev svg path,
+			&.swiper-button-next svg path {
+				fill: #000;
+			}
+		}
+	}
 
 	.trainers {
 		h2 {
@@ -352,45 +371,55 @@
 			line-height: 20px;
 		}
 	}
+
 	.documents {
 		padding-bottom: 115px;
 	}
+
 	.reviews {
 		padding-bottom: 30px;
+
 		h2 {
 			font-size: 22px;
 			line-height: 33px;
-			margin-bottom: 20px;	
+			margin-bottom: 20px;
 		}
+
 		&-block {
 			&__left {
 				display: none;
 			}
+
 			&__body {
 				width: 100%;
 			}
 		}
 	}
+
 	.reviews-slider {
 		p {
 			font-size: 14px;
 			line-height: 20px;
 			text-align: justify;
 		}
+
 		&__content {
 			h3 {
 				font-size: 16px;
 				line-height: 24px;
 			}
+
 			p {
 				font-size: 15px;
 				line-height: 24px;
 			}
 		}
 	}
+
 	.partners {
 		&__block {
 			display: block;
+
 			ul {
 				margin: 0;
 				width: 100%;
@@ -405,6 +434,7 @@
 				}
 			}
 		}
+
 		h2 {
 			width: 100%;
 			margin-bottom: 37px;
@@ -412,28 +442,35 @@
 			line-height: 33px;
 		}
 	}
+
 	.footer {
 		padding: 27px 0 36px;
+
 		&-container {
 			padding-left: 50px;
 			padding-right: 54px;
 		}
+
 		&__logo {
 			width: 135px;
 		}
+
 		&__text {
 			font-size: 12px;
 			line-height: 12px;
 		}
+
 		&__product {
 			font-size: 12px;
 			line-height: 12px;
 		}
+
 		&__link {
 			font-size: 12px;
 			line-height: 12px;
 		}
 	}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -542,6 +579,7 @@
 			height: 450px;
 		}
 	}
+
 	.documents-slider__bullets {
 		.swiper-pagination-bullet {
 			width: 13px;
@@ -549,6 +587,7 @@
 			margin-right: 18px;
 		}
 	}
+
 	.partners {
 		&__block {
 			ul {
@@ -559,22 +598,26 @@
 			}
 		}
 	}
+
 	.contact-form {
 		margin-left: 0;
 		width: 100%;
 	}
+
 	.footer {
 		padding: 17px 0;
+
 		&__mobile {
 			display: block;
 		}
+
 		&__text {
 			margin-bottom: 5px;
 		}
 	}
-	
 
-} 
+
+}
 
 @media screen and (max-width: 576px) {
 	.container {
@@ -595,6 +638,10 @@
 
 		&__btn {
 			padding: 0 20px;
+		}
+
+		&__menu {
+			padding-top: 100px;
 		}
 	}
 
@@ -697,10 +744,12 @@
 
 	.calendar-block {
 		display: block;
+
 		ul li {
 			margin-right: 0;
 			width: 45%;
 		}
+
 		h3 {
 			font-size: 15px;
 			line-height: 36px;
@@ -725,15 +774,19 @@
 
 	.slider .swiper-button-next {
 		right: 0;
+		
 	}
 
-	.swiper-button-prev,
-	.swiper-button-next {
-		width: 31px;
-		height: 31px;
+	.slider .swiper-button-prev,
+	.slider .swiper-button-next {
+		width: 37px;
+		height: 37px;
 		background-size: 50%;
+		svg {
+			transform: scale(0.7);
+		}
 	}
-
+	
 	.trainers {
 		&-container {
 			padding-left: 31px;
@@ -784,36 +837,61 @@
 			line-height: 20px;
 		}
 	}
+
 	.documents-slider__bullets {
-		display: none;	
+		margin-top: 10px;
+		margin-right: auto;
+		text-align: center;
+
+		.swiper-pagination-bullet {
+			margin-right: 9px;
+			margin-left: 9px;
+		}
 	}
+
 	.documents-slider__buttons {
 		width: 100%;
+
 		.swiper-button-next {
 			left: auto;
 			right: 10px;
 		}
+		.swiper-button-prev,
+		.swiper-button-next {
+			width: 37px;
+			height: 37px;
+			background-size: 50%;
+			svg {
+				transform: scale(0.7);
+			}
+		}
 	}
+
+
 	.reviews-container {
 		padding-left: 15px;
-		padding-right: 15px;	
+		padding-right: 15px;
 	}
+
 	.program-block__month {
 		h4 {
 			font-size: 14px;
 			line-height: 36px;
 			width: 130px;
 		}
+
 		span {
 			font-size: 12px;
 			line-height: 18px;
 		}
 	}
+
 	.partners {
 		&-container {
 			padding-left: 15px;
 			padding-right: 15px;
 		}
+
 		&__block {
 			ul {
 				li {
@@ -823,37 +901,44 @@
 				}
 			}
 		}
+
 		h2 {
 			font-size: 20px;
 			line-height: 30px;
 		}
 	}
+
 	.contact {
 		padding-bottom: 60px;
+
 		&-container {
 			padding-left: 0;
 			padding-right: 0;
 		}
+
 		&-block {
 			display: block;
 		}
+
 		h2 {
 			font-size: 20px;
 			line-height: 30px;
 			margin-bottom: 11px;
-			margin-left: 30px;		
+			margin-left: 30px;
 		}
+
 		p {
 			margin-left: 30px;
 			width: 100%;
 			margin-bottom: 77px;
-			width: 80%;	
+			width: 80%;
 		}
 	}
-	
+
 	.form {
 		margin-left: 0;
 		padding: 36px 30px 65px;
+
 		input {
 			margin-left: 0;
 		}
@@ -870,7 +955,17 @@
 			display: none;
 		}
 	}
-	
+
+	.footer {
+		&__logo {
+			margin-right: 21px;
+			width: 32%;
+		}
+		&__text {
+			margin-right: 0;
+		}
+	}
+
 }
 
 @media screen and (max-width: 375px) {
@@ -902,9 +997,11 @@
 			height: 280px;
 		}
 	}
+
 	.reviews-container {
 		padding-left: 10px;
 	}
+
 	.reviews-slider__content {
 		padding-left: 10px;
 	}

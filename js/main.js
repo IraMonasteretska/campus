@@ -50,8 +50,8 @@ let mySwiper = new Swiper('.first-slider', {
     },
     
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.first-next',
+        prevEl: '.first-prev',
     },
     
 });
@@ -61,6 +61,7 @@ let mySwiper = new Swiper('.first-slider', {
 let docSwiper = new Swiper('.documents-slider', {
     slidesPerView: 2,
     spaceBetween: 0,
+    slidesPerGroup: 2,
     loop: true,
     pagination: {
         el: '.documents-slider__bullets',
@@ -69,12 +70,13 @@ let docSwiper = new Swiper('.documents-slider', {
     },
     
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.documents-next',
+        prevEl: '.documents-prev',
     },
     breakpoints: {
         575: {
-          slidesPerView: 3,  
+          slidesPerView: 3, 
+          slidesPerGroup: 1, 
             pagination: {
             el: '.documents-slider__bullets',
             type: 'bullets',
@@ -89,6 +91,7 @@ let docSwiper = new Swiper('.documents-slider', {
         },
         1200: {
             slidesPerView: 6,
+            slidesPerGroup: 1,
         },
     }
 });
@@ -97,7 +100,6 @@ let docSwiper = new Swiper('.documents-slider', {
 
 let revSwiper = new Swiper('.reviews-slider', {
     slidesPerView: 1,
-    spaceBetween: 20,
     loop: true,
     pagination: {
         el: '.reviews-slider__bullets',
@@ -105,12 +107,13 @@ let revSwiper = new Swiper('.reviews-slider', {
         clickable: true,    
     },   
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.reviews-next',
+        prevEl: '.reviews-prev',
     },
     breakpoints: {
         575: {
-            slidesPerView: 2
+            slidesPerView: 2,
+            spaceBetween: 20
           },
     }
 });
