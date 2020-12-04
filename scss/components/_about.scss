@@ -45,7 +45,7 @@
 
     &__descr {
         padding-left: 58px;
-        margin-bottom: 185px;
+        margin-bottom: 340px;
         p {
             color: #fff;
             max-width: 494px;
@@ -91,7 +91,7 @@
 .card {
     flex-basis: 100%;
     position: relative;
-    margin-bottom: 170px;
+    margin-bottom: 300px;
 
     &__content {
         position: relative;
@@ -181,8 +181,8 @@
     &__img {
         position: absolute;
         bottom: 0;
-        height: 516px;
-        width: 141%;
+        height: auto;
+        width: 163%;
         left: -141%;
         z-index: 0;
     }

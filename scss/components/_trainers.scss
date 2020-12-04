@@ -79,6 +79,12 @@
         padding-right: 15px;
     }
     &__img {
+        height: 200px;
+        
         margin-bottom: 37px;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }

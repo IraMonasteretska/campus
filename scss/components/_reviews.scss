@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     &__left {
-        width: 28%;
+        width: 25%;
         display: flex;
         justify-content: space-between;
     }
@@ -31,12 +31,12 @@
     &__buttons {
         display: flex;
         margin-top: auto;
-        margin-bottom: 85px;
+        margin-bottom: 145px;
     }
     &__bullets {
         display: flex;
         margin-top: auto;
-        margin-bottom: 85px;
+        margin-bottom: 145px;
         .swiper-pagination-bullet {
             margin-left: 10px;
             margin-right: 10px;
@@ -47,9 +47,16 @@
             background: #000;
         }
     }
-
     &__person {
         display: flex;
+    }
+
+    &__img {
+        width: 85px;
+        height: auto;
+        img {
+            height: 100%;
+        }
     }
     &__content {
         padding-left: 30px;
@@ -83,6 +90,10 @@
             background: url('../img/svg/reviews.svg') no-repeat center center / contain;
             z-index: -1;
         }
+        &>p {
+            height: 120px;
+            overflow: hidden;
+        }
     }
 
     &__slide {
@@ -95,6 +106,7 @@
             font-size: 17px;
             line-height: 24px;
             margin-bottom: 20px;
+           
         }
     }
     

@@ -41,12 +41,13 @@
 }
 
 .menu {
-    max-width: 750px;
+    max-width: 54%;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-right: 36px;
+    margin-right: 2.5%;
     height: 100%;
+    margin-left: auto;
 
     &-item {
         display: flex;

@@ -1,9 +1,26 @@
 @media screen and (max-width: 1440px) {
-	.card__img {
-		left: -106%;
-		height: 480px;
-		width: auto;
+	.card {
+		margin-bottom: 200px;
+		&__img {
+			left: -120%;
+			height: auto;
+			width: 145%;
+		}
 	}
+	.about {
+		&-right {
+			&__descr {
+				margin-bottom: 235px;
+			}
+		}
+	}
+
+	.reviews-block {
+		&__left {
+			width: 25%;
+		}
+	}
+	
 
 	.partners__block ul {
 		width: 87%;
@@ -17,6 +34,9 @@
 	.first-slider__buttons,
 	.first-slider__bullets {
 		left: 40px;
+	}
+	.contact {
+		padding-bottom: 18%;
 	}
 }
 
@@ -67,6 +87,20 @@
 				margin-left: auto;
 			}
 		}
+	}
+
+	.card {
+		margin-bottom: 110px;
+	}
+
+	.card__img {
+		left: -115%;
+		height: auto;
+		width: 145%;
+	}
+
+	.about-right__descr {
+		margin-bottom: 130px;
 	}
 
 	.burger {
@@ -922,6 +956,9 @@
 			
 		}
 	}
+	.trainer__img {
+		height: auto;
+	}
 
 
 	.reviews-container {
@@ -954,6 +991,7 @@
 	}
 
 	.partners {
+		padding-bottom: 0;
 		&-container {
 			padding-left: 15px;
 			padding-right: 15px;
@@ -1007,15 +1045,12 @@
 		margin-left: 0;
 		padding: 36px 30px 65px;
 
-		input {
-			margin-left: 0;
+		&__group {
+			&--span{
+				margin-left: 0;
+			}
 		}
-
-		textarea {
-			margin-left: 0;
-		}
-
-		button {
+		&__btn {
 			margin-left: 0;
 		}
 
